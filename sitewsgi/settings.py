@@ -81,9 +81,21 @@ WSGI_APPLICATION = 'sitewsgi.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',  # Change to 'django.db.backends.mysql' for MySQL
+#         'NAME': 'db-lal',  # Strip leading '/'
+#         'USER': 'postgres',
+#         'PASSWORD': 'Lalchan1234!',
+#         'HOST': 'db-lal.clgq6kyuo6ni.us-east-2.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
+
 
 # Parse the DATABASE_URL from Railway
 # DATABASE_URL = os.getenv('DATABASE_URL')
+
 
 # if DATABASE_URL:
 #     result = urlparse(DATABASE_URL)
@@ -106,6 +118,16 @@ WSGI_APPLICATION = 'sitewsgi.wsgi.application'
 #         }
 #     }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', 
+#         'NAME': 'itbusaah_idriveneducationdb',
+#         'USER': 'itbusaah_itb_user',
+#         'PASSWORD': 'Lalchan1234!',
+#         'HOST': 'http://3.22.68.46:8000',   
+#         'PORT': '3306',
+#     }
+# }
 
 DATABASES = {
     'default': {
